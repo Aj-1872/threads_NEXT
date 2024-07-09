@@ -1,9 +1,11 @@
-import Image from "next/image";
+import { UserButton } from "@clerk/nextjs";
 
-export default function Home() {
-  return (
-    <main>
-      <h1>threads</h1>
-    </main>
-  );
+
+export default function Home(){
+  return(
+    <div>
+      <UserButton afterSignOutUrl="/"/>
+      <h1>hello</h1>
+    </div>
+  )
 }
